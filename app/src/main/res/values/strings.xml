@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UTS Muhammad Irfan</string>
+    <string-array name="daftar_jalur">
+        <item>Jalur Pendaftaran</item>
+        <item>Tes Tertulis</item>
+        <item>Tes Wawancara</item>
+        <item>Rekomendasi</item>
+    </string-array>
+</resources>
