@@ -39,11 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 if (nama.trim().equals("")){
                     etinputnama.setError("Nama Tidak Boleh Kosong");
                 }
-                else if (nama.trim().equals("")){
+                else if (np.trim().equals("")){
                     etinputnomorp.setError(("Nomor Pendaftaran Tidak Boleh Kosong"));
                 }
+                else if (sp.trim().equals("Jalur Pendaftaran")){
+                    Toast.makeText(MainActivity.this, "Jalur Pendaftaran Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
+                }
                 else if (!(cbkonfirmasi.isChecked())){
-                    Toast.makeText(MainActivity.this, "Jalur Pendaftaran Belum Dipilih", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Belum Konfirmasi Pendaftaran", Toast.LENGTH_SHORT).show();
                 }else{
                     Intent intent = new Intent(MainActivity.this,MainActivity2.class);
                     intent.putExtra("Nama", nama);
